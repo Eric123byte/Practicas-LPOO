@@ -1,0 +1,24 @@
+Eric Morales Sánchez
+Matricula: 2090509
+
+Documentación de sincronización utilizada
+
+1. CajeroThread26 y ClienteRunnable08.
+
+Se utilizó 'synchronized' en los métodos de CuentaBancaria (retirar y depositar).
+Esto previene 'race conditions', asegurando que solo un hilo pueda modificar el saldo al mismo tiempo.
+
+2. Productor-Consumidor.
+
+Se utilizó 'wait()' y 'notify()' en la clase Buffer. El consumidor espera si el buffer está vacío y el productor notifica cuando agrega un elemento.
+Esto evita errores de lectura/escritura concurrente y mantiene el tamaño del buffer controlado
+
+3. Main.
+
+Se utilizó 'join()' para esperar a que los hilos terminen antes de imprimir resultados finales.
+Garantiza que el saldo final refleje todas las operaciones de los hilos.
+
+4. ThreadPool.
+
+Se utilizó ExecutorService para manejar múltiples tareas concurrentes de manera eficiente.
+Evita la creación excesiva de hilos y mejora el rendimiento general.
