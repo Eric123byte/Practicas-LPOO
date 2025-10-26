@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+<BorderPane maxHeight="-Infinity"
+           maxWidth="-Infinity"
+           minHeight="-Infinity"
+           minWidth="-Infinity"
+           prefHeight="400.0"
+           prefWidth="600.0"
+           xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="Practica11_GUI.Controller"
+           fx:id="ventana"
+           style="-fx-background-color: #FFFFFF;">
+    <top>
+        <VBox alignment="CENTER_LEFT" styleClass="fondo-azul">
+            <padding>
+                <Insets left="60"/>
+            </padding>
+            <ImageView fx:id="fondo" fitWidth="200" fitHeight="110" preserveRatio="true">
+                <image>
+                    <Image url="@recursos_Morales/lapiz_menu.png" />
+                </image>
+            </ImageView>
+        </VBox>
+    </top>
+    <center>
+        <VBox styleClass="fondo-azul" alignment="TOP_LEFT">
+            <padding>
+                <Insets left="60" bottom="5"/>
+            </padding>
+            <TableView fx:id="tablaEstudiantes" prefWidth="10" prefHeight="500">
+                <columns>
+                    <TableColumn fx:id="colNombre" text="Nombre" prefWidth="120" />
+                    <TableColumn fx:id="colApellidoP" text="Apellido Paterno" prefWidth="120" />
+                    <TableColumn fx:id="colApellidoM" text="Apellido Materno" prefWidth="120" />
+                    <TableColumn fx:id="colMatricula" text="Matrícula" prefWidth="120" />
+                    <TableColumn fx:id="colCarrera" text="Carrera" prefWidth="120" />
+                    <TableColumn fx:id="colEstado" text="Estado" prefWidth="120" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+    <left>
+        <VBox alignment="TOP_CENTER" fx:id="menu" spacing="15" styleClass="fondo-azul">
+            <padding>
+                <Insets left="60"/>
+            </padding>
+        </VBox>
+    </left>
+    <bottom>
+        <HBox alignment="CENTER" fx:id="barra_inferior" prefWidth="200" prefHeight="400">
+            <VBox alignment="CENTER" fx:id="ingresar_datos" spacing="15">
+                <HBox alignment="BOTTOM_LEFT" fx:id="datos_inferior" />
+            </VBox>
+        </HBox>
+    </bottom>
+</BorderPane>

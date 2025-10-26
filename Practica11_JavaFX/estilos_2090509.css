@@ -1,0 +1,63 @@
+#barra_inferior {
+    -fx-background-image: url("recursos_Morales/fondo_amarillo_app.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.fondo-azul {
+    -fx-background-image: url("recursos_Morales/fondo_azul_app.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-border-color: #000000;
+}
+
+.buttonEntered:hover {
+    -fx-background-color: #00ef81;
+    -fx-text-fill: black;
+}
+
+.buttonClicked:pressed {
+    -fx-background-color: #FF0000;
+    -fx-text-fill: white;
+}
+
+.label{
+    -fx-text-fill: black;
+    -fx-font-size: 25px;
+}
+
+.menu{
+    -fx-text-fill: black;
+    -fx-font-size: 25px;
+}
+
+.text{
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-text-box-border: green;
+    -fx-focus-color: green;
+}
+
+.text-valid{
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-text-box-border: green;
+    -fx-focus-color: green;
+}
+
+.text-invalid{
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+    -fx-text-box-border: red;
+    -fx-focus-color: red;
+}
